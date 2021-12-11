@@ -9,6 +9,9 @@
     <string name="descNavHeader">Inicio claro shop!</string>
     <string name="descLocation">Localizacion</string>
     <string name="descArrowRight">Entrar</string>
+    <string name="descArticulo">Artículo</string>
+    <string name="descFavorito">Favorito</string>
+    <string name="descCompartir">Compartir</string>
 
     <string name="claroShop">Claro Shop</string>
     <string name="iniciarSesion">Iniciar sesión</string>

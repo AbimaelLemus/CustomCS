@@ -33,6 +33,7 @@ class Home : Fragment() {
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             when (position) {
                 0 -> {
+                    viewPager.isUserInputEnabled = false
                     tab.text = "Resumen"
                 }
                 1 -> {
