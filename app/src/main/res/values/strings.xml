@@ -21,4 +21,26 @@
     <string name="buscar">Buscar</string>
 
     <string name="solicitarCP">Ingresa un código postal</string>
+
+    <!--ingoGeneral-->
+    <string name="nombreArticulo">Lapto Ideapad 330-14Ast Lenovo</string>
+    <string name="vendidoPor">Vendido por sanborns</string>
+    <string name="opiniones">(32 opiniones)</string>
+    <string name="precioOriginal">$7,649</string>
+    <string name="descuentoPorcentaje">-10%</string>
+    <string name="ultimoPrecio">$7,649</string>
+    <string name="descPrecio">MXN Ahorras $1070</string>
+    <string name="envioGratis">Envio Gratis</string>
+    <string name="compraSegura">Compra segura</string>
+
+    <!--Botones-->
+    <string name="comprarAhora">Compara ahora</string>
+    <string name="agregarAlCarrito">Agregar al carrito</string>
+
+    <!--Secciones-->
+    <string name="seleccionarColor">Seleccionar color\n2 colores</string>
+    <string name="cantida">Cantidad</string>
+    <string name="fechaEntrega">LLega enre 23y 24 de septiembre</string>
+    <string name="mesesSinIntereses">Hasta 48 meses de $143</string>
+
 </resources>

@@ -1,64 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:id="@+id/rlResumen"
     android:layout_height="wrap_content"
     tools:context=".ui.resumen.Resumen">
 
-    <ImageView
-        android:id="@+id/ivCompartir"
-        android:layout_width="@dimen/d32"
-        android:layout_height="@dimen/d32"
-        android:src="@drawable/ic_compartir"
-        android:contentDescription="@string/descCompartir"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.934"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivCompartir" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clBarra"
+        android:id="@+id/rlResumen"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/viewPager"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        app:layout_constraintStart_toStartOf="parent">
-
-
-        <TextView
-            android:id="@+id/tvIndicador"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableStart="@drawable/ic_galeria"
-            android:drawablePadding="10dp"
-            android:textColor="@color/negro"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+        android:paddingBottom="@dimen/d32"
+        android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/ivFav"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/descFavorito"
-            android:src="@drawable/ic_favorito"
+            android:id="@+id/ivCompartir"
+            android:layout_width="@dimen/d32"
+            android:layout_height="@dimen/d32"
+            android:contentDescription="@string/descCompartir"
+            android:src="@drawable/ic_compartir"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.952"
-            app:layout_constraintStart_toEndOf="@+id/tvIndicador"
+            app:layout_constraintHorizontal_bias="0.934"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivCompartir" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clBarra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d8"
+            android:layout_marginEnd="@dimen/d8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewPager">
+
+
+            <TextView
+                android:id="@+id/tvIndicador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_galeria"
+                android:drawablePadding="10dp"
+                android:textColor="@color/negro"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivFav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/descFavorito"
+                android:src="@drawable/ic_favorito"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.952"
+                app:layout_constraintStart_toEndOf="@+id/tvIndicador"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            android:id="@+id/includeInfoGeneral"
+            layout="@layout/item_info_general"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/d16"
+            android:layout_marginStart="@dimen/d8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clBarra" />
+
+        <include
+            android:id="@+id/includeCaractericticas"
+            layout="@layout/item_caracteristicas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/includeInfoGeneral" />
+
+        <include
+            android:id="@+id/includeBotones"
+            layout="@layout/item_botones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/includeCaractericticas" />
+
+        <include
+            android:id="@+id/includeEntregaMeses"
+            layout="@layout/item_entrega_meses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/includeBotones" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

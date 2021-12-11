@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/btn_Comprar"
+        android:text="@string/comprarAhora"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d16"
+        android:layout_marginEnd="@dimen/d16"
+        android:layout_marginBottom="@dimen/d16"
+        android:background="@color/gris"
+        android:drawableStart="@drawable/ic_carrito"
+        android:drawableTint="@color/negro"
+        android:text="@string/agregarAlCarrito"
+        android:textAllCaps="false"
+        android:textColor="@color/negro" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableStart="@drawable/ic_compra_segura"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="@string/compraSegura"
+        android:textColor="@color/negro" />
+
+    <include layout="@layout/item_divider" />
+
+</LinearLayout>

@@ -59,6 +59,21 @@ class Resumen : Fragment() {
         }
         )
 
+        /*textViewTitulo.text = Text.getTypefaceSpannedString(
+                "Toma una foto",
+                requireContext(),
+                R.font.avenirnext_bold
+            )
+            textViewTitulo.append(m1)
+            textViewTitulo.append(
+                Text.getTypefaceSpannedString(
+                    m2,
+                    requireContext(),
+                    R.font.avenirnext_bold
+                )
+            )
+            textViewTitulo.append(m3)*/
+
         return root
     }
 

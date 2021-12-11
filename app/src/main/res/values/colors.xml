@@ -24,6 +24,8 @@
     <color name="blanco">#fff</color>
     <color name="negro">#000</color>
     <color name="gris">#B1B1B1</color>
+    <color name="amarillo">#ffff00</color>
+    <color name="verde">#03CC03</color>
 
     <color name="transparente">#00FFFFFF</color>
 
