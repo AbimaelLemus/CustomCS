@@ -7,7 +7,7 @@
     android:gravity="bottom"
     android:orientation="vertical"
     android:padding="@dimen/d16"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    android:theme="@style/ThemeOverlay.AppCompat.Light">
 
     <ImageView
         android:id="@+id/imageView"
@@ -29,4 +29,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/iniciarSesion" />
+
+    <include layout="@layout/item_divider"/>
 </LinearLayout>

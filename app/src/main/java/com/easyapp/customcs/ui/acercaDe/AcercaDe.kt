@@ -11,8 +11,6 @@ import androidx.lifecycle.ViewModelProvider
 import com.easyapp.customcs.databinding.FragmentAcercaDeBinding
 
 class AcercaDe : Fragment() {
-
-    private lateinit var viewModel: AcercaDeViewModel
     private var _binding: FragmentAcercaDeBinding? = null
     private val binding get() = _binding!!
 
@@ -21,15 +19,8 @@ class AcercaDe : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        viewModel = ViewModelProvider(this).get(AcercaDeViewModel::class.java)
-
         _binding = FragmentAcercaDeBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-        val textView: TextView = binding.tvNombre
-        viewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
 
         return root
     }

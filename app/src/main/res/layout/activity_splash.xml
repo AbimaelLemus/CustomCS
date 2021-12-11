@@ -4,15 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.acercaDe.AcercaDe">
+    android:background="@color/secondaryLightColor"
+    tools:context=".Splash">
 
     <TextView
-        android:id="@+id/tvNombre"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Bisman Abimael Perez Lemus\n\n992-113-9428\n\nbisman.lemus@gmail.com"
+        android:layout_margin="@dimen/d16"
+        android:text="v:0.1.0"
+        android:textColor="@color/blanco"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_claro_shop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

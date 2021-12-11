@@ -19,4 +19,13 @@
         <item name="android:textColor">@color/blanco</item>
     </style>
 
+    <style name="btnCarrito" >
+        <item name="android:stateListAnimator">@null</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:drawableStart">@drawable/ic_carrito</item>
+        <item name="android:layout_margin">@dimen/d16</item>
+        <item name="android:background">@color/gris</item>
+        <item name="android:textColor">@color/negro</item>
+    </style>
+
 </resources>

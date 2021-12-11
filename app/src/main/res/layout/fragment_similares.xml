@@ -5,9 +5,12 @@
     android:layout_height="match_parent"
     tools:context=".ui.similares.Similares">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSimilares"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        tools:listitem="@layout/item_similares"
+        tools:itemCount="3"
         android:text="@string/similares" />
 
 </FrameLayout>

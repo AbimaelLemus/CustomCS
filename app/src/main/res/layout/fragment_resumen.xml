@@ -14,8 +14,8 @@
 
         <ImageView
             android:id="@+id/ivCompartir"
-            android:layout_width="@dimen/d32"
-            android:layout_height="@dimen/d32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:contentDescription="@string/descCompartir"
             android:src="@drawable/ic_compartir"
             app:layout_constraintEnd_toEndOf="parent"

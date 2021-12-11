@@ -5,23 +5,16 @@
     android:orientation="vertical">
 
     <Button
+        style="@style/btn_Comprar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/btn_Comprar"
-        android:text="@string/comprarAhora"/>
+        android:text="@string/comprarAhora" />
 
     <Button
+        style="@style/btnCarrito"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/d16"
-        android:layout_marginEnd="@dimen/d16"
-        android:layout_marginBottom="@dimen/d16"
-        android:background="@color/gris"
-        android:drawableStart="@drawable/ic_carrito"
-        android:drawableTint="@color/negro"
-        android:text="@string/agregarAlCarrito"
-        android:textAllCaps="false"
-        android:textColor="@color/negro" />
+        android:text="@string/agregarAlCarrito" />
 
     <TextView
         android:layout_width="wrap_content"

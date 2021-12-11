@@ -24,7 +24,7 @@
 
     <!--ingoGeneral-->
     <string name="nombreArticulo">Lapto Ideapad 330-14Ast Lenovo</string>
-    <string name="vendidoPor">Vendido por sanborns</string>
+    <string name="vendidoPor">Vendido por Sanborns</string>
     <string name="opiniones">(32 opiniones)</string>
     <string name="precioOriginal">$7,649</string>
     <string name="descuentoPorcentaje">-10%</string>
@@ -34,7 +34,7 @@
     <string name="compraSegura">Compra segura</string>
 
     <!--Botones-->
-    <string name="comprarAhora">Compara ahora</string>
+    <string name="comprarAhora">Compra ahora</string>
     <string name="agregarAlCarrito">Agregar al carrito</string>
 
     <!--Secciones-->
