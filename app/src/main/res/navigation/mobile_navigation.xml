@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.easyapp.customcs.ui.home.Home"
+        android:label="@string/inicio"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_acercaDe"
+        android:name="com.easyapp.customcs.ui.acercaDe.AcercaDe"
+        android:label="@string/acerdaDe"
+        tools:layout="@layout/fragment_acerca_de" />
+</navigation>
