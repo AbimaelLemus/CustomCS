@@ -8,12 +8,15 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.easyapp.customcs.ui.home.Home"
-        android:label="@string/inicio"
         tools:layout="@layout/fragment_home" />
+
+    <!--
+    Se quito para no estar reemplazando el titulo por fragment
+        android:label="@string/inicio"
+        android:label="@string/acerdaDe"-->
 
     <fragment
         android:id="@+id/nav_acercaDe"
         android:name="com.easyapp.customcs.ui.acercaDe.AcercaDe"
-        android:label="@string/acerdaDe"
         tools:layout="@layout/fragment_acerca_de" />
 </navigation>

@@ -3,9 +3,50 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/blanco"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_activity_navigation">
+
+    <RelativeLayout
+        android:id="@+id/llContenedorCP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/d24"
+        android:layout_marginEnd="@dimen/d24"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivLocation"
+            android:layout_width="wrap_content"
+            android:contentDescription="@string/descLocation"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:tint="@color/negro"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_location" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/ivArrowRight"
+            android:layout_toEndOf="@+id/ivLocation"
+            android:textColor="@color/negro"
+            android:text="@string/solicitarCP" />
+
+        <ImageView
+            android:id="@+id/ivArrowRight"
+            android:layout_width="@dimen/d32"
+            android:contentDescription="@string/descArrowRight"
+            android:layout_height="@dimen/d32"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_arrow_right" />
+
+    </RelativeLayout>
 
     <fragment
         android:id="@+id/nav_host_fragment_content_activity_navigation"
@@ -15,6 +56,6 @@
         app:defaultNavHost="true"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/llContenedorCP"
         app:navGraph="@navigation/mobile_navigation" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,6 +23,7 @@
 
     <color name="blanco">#fff</color>
     <color name="negro">#000</color>
+    <color name="gris">#B1B1B1</color>
 
     <color name="transparente">#00FFFFFF</color>
 

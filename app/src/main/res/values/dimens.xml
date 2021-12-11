@@ -1,5 +1,7 @@
 <resources>
-    <dimen name="d16">16dp</dimen>
     <dimen name="d8">8dp</dimen>
+    <dimen name="d16">16dp</dimen>
+    <dimen name="d24">24dp</dimen>
+    <dimen name="d32">32dp</dimen>
     <dimen name="nav_header_height">176dp</dimen>
 </resources>

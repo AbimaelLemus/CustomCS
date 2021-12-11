@@ -3,8 +3,12 @@
 
     <string name="inicio">Inicio</string>
     <string name="acerdaDe">Acerca de…</string>
+    <string name="resumen">Resumen</string>
+    <string name="similares">Similares</string>
 
-    <string name="descImage_NavHeader">Inicio claro shop!</string>
+    <string name="descNavHeader">Inicio claro shop!</string>
+    <string name="descLocation">Localizacion</string>
+    <string name="descArrowRight">Entrar</string>
 
     <string name="claroShop">Claro Shop</string>
     <string name="iniciarSesion">Iniciar sesión</string>
@@ -12,4 +16,6 @@
     <string name="carritoCompras">Carrito</string>
     <string name="favorito">Favoritos</string>
     <string name="buscar">Buscar</string>
+
+    <string name="solicitarCP">Ingresa un código postal</string>
 </resources>
