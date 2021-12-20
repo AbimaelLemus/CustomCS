@@ -9,9 +9,9 @@ import android.view.ViewGroup
 import androidx.viewpager2.widget.ViewPager2
 import com.easyapp.customcs.R
 import com.easyapp.customcs.adapters.AdapterResumen
-import com.easyapp.customcs.databinding.FragmentHomeBinding
 import com.easyapp.customcs.databinding.FragmentResumenBinding
 import com.easyapp.customcs.model.ModelEvidencias
+import com.easyapp.customcs.util.DialogRegistro
 
 class Resumen : Fragment() {
 
@@ -51,7 +51,7 @@ class Resumen : Fragment() {
         binding.viewPager.isUserInputEnabled = false*/
         setCurrentIndicador(0)
 
-        binding.viewPager.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback(){
+        binding.viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
                 setCurrentIndicador(position + 1)
@@ -73,6 +73,12 @@ class Resumen : Fragment() {
                 )
             )
             textViewTitulo.append(m3)*/
+
+        binding.apply {
+            ivCompartir.setOnClickListener {
+                DialogRegistro().show(requireActivity().supportFragmentManager/* childFragmentManager supportFragmentManager*/, DialogRegistro::class.java.simpleName)
+            }
+        }
 
         return root
     }

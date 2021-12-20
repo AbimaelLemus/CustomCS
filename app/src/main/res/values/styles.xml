@@ -28,4 +28,9 @@
         <item name="android:textColor">@color/negro</item>
     </style>
 
+    <style name="Theme.App.Dialog.FullScreen" parent="Theme.MaterialComponents.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@color/transparente</item>
+    </style>
+
 </resources>
